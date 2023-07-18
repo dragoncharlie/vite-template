@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './_i18n/i18n.ts'
 import './index.css'
 
 import router from './router.tsx'
