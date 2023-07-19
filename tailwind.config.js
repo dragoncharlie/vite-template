@@ -12,6 +12,9 @@ module.exports = {
       lg: '1024px',
       xl: '1440px',
     },
+    fontFamily: {
+      'body': ['SuisseIntl', 'Helvetica', 'Arial', 'sans-serif']
+    },
     colors: {
       transparent: 'transparent',
 

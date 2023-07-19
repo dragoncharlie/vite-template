@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: SuisseIntl;
+  font-weight: 700;
+  src: url("_fonts/SuisseIntl-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SuisseIntl;
+  font-weight: 450;
+  src: url("_fonts/SuisseIntl-Book.otf") format("opentype");
+}
+
 @layer base{
   body {
     @apply bg-surface-50
