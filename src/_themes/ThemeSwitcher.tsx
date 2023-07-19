@@ -1,8 +1,7 @@
-import { useContext } from 'react'
-import ThemeContext from './ThemeContext.tsx'
+import useTheme from '@/_themes/useTheme.tsx'
 
 const ThemeSwitcher = () => {
-	const { theme, setTheme } = useContext(ThemeContext)
+	const { theme, setTheme } = useTheme()
 
 	return (
 		<button

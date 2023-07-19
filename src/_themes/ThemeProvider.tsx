@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import ThemeContext from './ThemeContext.tsx'
 
-// TODO add system theme matching
-// TODO add saving in local storage
 export default function ThemeProvider({
 	children,
 }: {
