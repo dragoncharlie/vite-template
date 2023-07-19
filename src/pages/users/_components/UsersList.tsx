@@ -1,4 +1,4 @@
-import { getUsers } from '../../../_api/user.ts'
+import { getUsers } from '@/_api/user.ts'
 import { useQuery } from '@tanstack/react-query'
 
 export default function ListUsers() {

@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import Root from './app/layout.tsx'
-import Home from './app/page.tsx'
-import Users from './app/users/page.tsx'
+import Root from '@/pages/layout.tsx'
+import Home from '@/pages/page.tsx'
+import Users from '@/pages/users/page.tsx'
 
 const router = createBrowserRouter([
 	{

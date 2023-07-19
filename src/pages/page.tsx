@@ -1,6 +1,6 @@
-import ThemeSwitcher from '../_themes/ThemeSwitcher.tsx'
+import ThemeSwitcher from '@/_themes/ThemeSwitcher.tsx'
 import { useTranslation } from 'react-i18next'
-import LocaleSwitcher from '../_i18n/LocaleSwitcher.tsx'
+import LocaleSwitcher from '@/_i18n/LocaleSwitcher.tsx'
 
 export default function Home() {
 	const { t } = useTranslation()
