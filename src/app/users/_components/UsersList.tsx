@@ -1,5 +1,5 @@
-import {getUsers} from "../../../_api/user.ts";
-import {useQuery} from "@tanstack/react-query";
+import { getUsers } from '../../../_api/user.ts'
+import { useQuery } from '@tanstack/react-query'
 
 export default function ListUsers() {
 	const { data, isLoading, isFetching, error } = useQuery({
