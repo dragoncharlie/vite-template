@@ -7,10 +7,10 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '576px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1440px',
+      sm: '576px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
     },
     colors: {
       transparent: 'transparent',
@@ -90,34 +90,34 @@ module.exports = {
         300: '#007AFF',
         400: '#3B61F3',
         500: '#0045E6',
-      }
+      },
     },
     boxShadow: {
       50: '0px 2px 7px rgba(0, 0, 0, 0.07)',
-      70 : '0px 2px 26px rgba(0, 0, 0, 0.07)',
+      70: '0px 2px 26px rgba(0, 0, 0, 0.07)',
       100: '0px 0px 4px rgba(232, 48, 158, 0.20)',
       150: '4px 9px 17px rgba(187, 62, 189, 0.0',
     },
     fontSize: {
-      '48': '48px',
-      '32': '32px',
-      '24': '24px',
-      '18': '18px',
-      '16': '16px',
-      '14': '14px',
-      '12': '12px',
+      48: '48px',
+      32: '32px',
+      24: '24px',
+      18: '18px',
+      16: '16px',
+      14: '14px',
+      12: '12px',
     },
     fontWeight: {
-      'bold': 700,
-      'book': 450,
+      bold: 700,
+      book: 450,
     },
     lineHeight: {
       150: '150%',
       140: '140%',
       130: '130%',
       120: '120%',
-      100: '100%'
-    }
+      100: '100%',
+    },
   },
   plugins: [],
 }
