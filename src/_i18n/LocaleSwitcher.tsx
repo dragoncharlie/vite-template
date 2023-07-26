@@ -1,5 +1,6 @@
 import { i18n as config } from './i18n-config'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 export default function LocaleSwitcher() {
 	const { i18n } = useTranslation()
@@ -10,6 +11,12 @@ export default function LocaleSwitcher() {
 
 	return (
 		<div>
+			<Helmet
+				htmlAttributes={{
+					lang: i18n.language,
+					dir: i18n.dir(),
+				}}
+			/>
 			<p>Locale switcher:</p>
 			<ul>
 				{config.locales.map((locale) => {
