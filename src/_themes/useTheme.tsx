@@ -1,29 +1,30 @@
 import { useCallback, useContext, useEffect } from 'react'
 import ThemeContext from '@/_themes/ThemeContext.tsx'
 
+export const getDefaultTheme = () => {
+	const MEDIA = '(prefers-color-scheme: dark)'
+	const media = window.matchMedia(MEDIA)
+	const storageTheme = localStorage.getItem('theme')
+
+	if (storageTheme && storageTheme !== 'system') return storageTheme
+
+	if (media.matches) {
+		return 'dark'
+	} else {
+		return 'light'
+	}
+}
+
 const useTheme = () => {
 	const MEDIA = '(prefers-color-scheme: dark)'
-	const { theme, setTheme } = useContext(ThemeContext)
+	const { setTheme } = useContext(ThemeContext)
 
 	const changeThemeHandler = (value: string) => {
 		localStorage.setItem('theme', value)
 	}
 
-	const changeTheme = useCallback((value: string) => {
-		setTheme(value)
-		changeThemeHandler(value)
-	}, [])
-
 	const systemThemeChangeHandler = useCallback(() => {
-		const media = window.matchMedia(MEDIA)
-
-		if (media.matches) {
-			// Theme set to dark.
-			setTheme('dark')
-		} else {
-			// Theme set to light.
-			setTheme('light')
-		}
+		setTheme(getDefaultTheme())
 		changeThemeHandler('system')
 	}, [])
 
@@ -39,10 +40,7 @@ const useTheme = () => {
 		}
 	}, [])
 
-	return {
-		theme,
-		setTheme: changeTheme,
-	}
+	return null
 }
 
 export default useTheme

@@ -1,6 +1,9 @@
 import { Link, Outlet } from 'react-router-dom'
+import useTheme from '@/_themes/useTheme.tsx'
 
 function Layout() {
+	useTheme()
+
 	return (
 		<div>
 			<div className='flex items-center gap-2 mb-8'>
