@@ -6,7 +6,7 @@ const ThemeSwitcher = () => {
 	return (
 		<button
 			onClick={() => (theme == 'dark' ? setTheme('light') : setTheme('dark'))}
-			className='bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl'
+			className='bg-surface-300 dark:bg-surface-50 hover:bg-surface-400 dark:hover:bg-surface-300 transition-all duration-100 text-white dark:text-surface-800 px-4 py-2 text-2xl'
 		>
 			Toggle Theme
 		</button>

@@ -16,7 +16,7 @@
 
 @layer base{
   body {
-    @apply bg-surface-50 font-body
+    @apply bg-surface-50 font-body dark:bg-surface-800 dark:text-surface-50
   }
 }
 
